@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
+    <title>About Us</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -15,7 +15,6 @@
             background: #2d3e50;
             padding: 1rem 0;
             text-align: center;
-            position: relative;
         }
         .navbar a {
             color: #fff;
@@ -26,27 +25,6 @@
         }
         .navbar a:hover {
             color: #ffb347;
-        }
-        .login-btn {
-            position: absolute;
-            right: 30px;
-            top: 50%;
-            transform: translateY(-50%);
-            background: #ffb347;
-            color: #2d3e50;
-            border: none;
-            border-radius: 6px;
-            padding: 8px 22px;
-            font-size: 1.05rem;
-            font-weight: 500;
-            cursor: pointer;
-            transition: background 0.2s, color 0.2s;
-            text-decoration: none;
-        }
-        .login-btn:hover {
-            background: #fff;
-            color: #2d3e50;
-            border: 1px solid #2d3e50;
         }
         .container {
             max-width: 700px;
@@ -64,6 +42,31 @@
         p {
             color: #555;
             font-size: 1.1rem;
+            margin-bottom: 18px;
+        }
+        .team {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 30px;
+        }
+        .member {
+            background: #f4f6f8;
+            border-radius: 8px;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+            padding: 20px 18px;
+            width: 180px;
+        }
+        .member h3 {
+            color: #2d3e50;
+            margin: 10px 0 6px 0;
+            font-size: 1.1rem;
+        }
+        .member p {
+            color: #888;
+            font-size: 0.98rem;
+            margin: 0;
         }
     </style>
 </head>
@@ -72,14 +75,24 @@
         <a href="/">Home</a>
         <a href="/aboutus/">About Us</a>
         <a href="/contactus/">Contact Us</a>
-        <a href="/login/" class="login-btn">Login</a>
     </div>
     <div class="container">
-        <h1>Welcome to Our Home Page</h1>
-        <p>
-            We are glad to have you here! Explore our website to learn more about us and get in touch.<br>
-            Use the navigation above to visit different sections.
-        </p>
+        <h1>About Us</h1>
+        <p>We are a passionate team dedicated to providing the best experience for our users. Our mission is to deliver high-quality solutions and outstanding support.</p>
+        <div class="team">
+            <div class="member">
+                <h3>Nayen Malla</h3>
+                <p>Founder & CEO</p>
+            </div>
+            <div class="member">
+                <h3>Pratyaksha kumar Malla</h3>
+                <p>Lead Developer</p>
+            </div>
+            <div class="member">
+                <h3>Alan shrestha</h3>
+                <p>UI/UX Designer</p>
+            </div>
+        </div>
     </div>
 </body>
 </html>
