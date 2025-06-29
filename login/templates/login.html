@@ -79,6 +79,36 @@
             background: #ffb347;
             color: #2d3e50;
         }
+        .signup-btn {
+            background: #ffb347;
+            color: #2d3e50;
+            border: none;
+            border-radius: 6px;
+            padding: 12px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: background 0.2s;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .signup-btn:hover {
+            background: #2d3e50;
+            color: #fff;
+        }
+        .signup-link {
+            margin-top: 20px;
+            color: #555;
+            font-size: 1rem;
+        }
+        .signup-link a {
+            color: #2d3e50;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        .signup-link a:hover {
+            color: #ffb347;
+        }
     </style>
 </head>
 <body>
@@ -100,7 +130,11 @@
                 <label for="remember">Remember Me</label>
             </div>
             <button type="submit">Login</button>
+            <a href="/signup/" class="signup-btn">Sign Up</a>
         </form>
+        <div class="signup-link">
+            Don't have an account? <a href="/signup/">Sign up here</a>
+        </div>
     </div>
 </body>
 </html>
