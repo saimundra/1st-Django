@@ -21,7 +21,7 @@ urlpatterns = [
     path('',include("HomePage.urls")),
     path('contactus/',include("contactus.urls")),
     path("aboutus/",include("aboutus.urls")),
-    path("signup/",include("signup.urls")),
+    path("signup",include("signup.urls")),
     path("login/",include("login.urls")),
     path("admin/",admin.site.urls),
 ]
