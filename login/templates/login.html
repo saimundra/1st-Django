@@ -1,140 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
     <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f4f6f8;
-            margin: 0;
-            padding: 0;
-        }
-        .navbar {
-            background: #2d3e50;
-            padding: 1rem 0;
-            text-align: center;
-        }
-        .navbar a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 20px;
-            font-size: 1.1rem;
-            transition: color 0.2s;
-        }
-        .navbar a:hover {
-            color: #ffb347;
-        }
-        .container {
-            max-width: 400px;
-            margin: 60px auto;
-            background: #fff;
-            border-radius: 10px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-            padding: 40px 30px;
-            text-align: center;
-        }
-        h1 {
-            color: #2d3e50;
-            margin-bottom: 20px;
-        }
-        form {
-            display: flex;
-            flex-direction: column;
-            gap: 18px;
-        }
-        input[type="text"],
-        input[type="email"],
-        input[type="password"] {
-            padding: 12px;
-            border: 1px solid #d1d5db;
-            border-radius: 6px;
-            font-size: 1rem;
-            background: #f4f6f8;
-            transition: border 0.2s;
-        }
-        input:focus {
-            border: 1.5px solid #2d3e50;
-            outline: none;
-        }
-        .remember {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            font-size: 1rem;
-            color: #555;
-        }
-        button {
-            background: #2d3e50;
-            color: #fff;
-            border: none;
-            border-radius: 6px;
-            padding: 12px;
-            font-size: 1.1rem;
-            cursor: pointer;
-            transition: background 0.2s;
-        }
-        button:hover {
-            background: #ffb347;
-            color: #2d3e50;
-        }
-        .signup-btn {
-            background: #ffb347;
-            color: #2d3e50;
-            border: none;
-            border-radius: 6px;
-            padding: 12px;
-            font-size: 1.1rem;
-            cursor: pointer;
-            transition: background 0.2s;
-            text-decoration: none;
-            display: inline-block;
-        }
-        .signup-btn:hover {
-            background: #2d3e50;
-            color: #fff;
-        }
-        .signup-link {
-            margin-top: 20px;
-            color: #555;
-            font-size: 1rem;
-        }
-        .signup-link a {
-            color: #2d3e50;
-            text-decoration: none;
-            font-weight: 500;
-            transition: color 0.2s;
-        }
-        .signup-link a:hover {
-            color: #ffb347;
-        }
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background: #f4f6f8;
+        margin: 0;
+        padding: 0;
+      }
+      .navbar {
+        background: #2d3e50;
+        padding: 1rem 0;
+        text-align: center;
+      }
+      .navbar a {
+        color: #fff;
+        text-decoration: none;
+        margin: 0 20px;
+        font-size: 1.1rem;
+        transition: color 0.2s;
+      }
+      .navbar a:hover {
+        color: #ffb347;
+      }
+      .container {
+        max-width: 400px;
+        margin: 60px auto;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        padding: 40px 30px;
+        text-align: center;
+      }
+      h1 {
+        color: #2d3e50;
+        margin-bottom: 20px;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+      }
+      input[type="text"],
+      input[type="email"],
+      input[type="password"] {
+        padding: 12px;
+        border: 1px solid #d1d5db;
+        border-radius: 6px;
+        font-size: 1rem;
+        background: #f4f6f8;
+        transition: border 0.2s;
+      }
+      input:focus {
+        border: 1.5px solid #2d3e50;
+        outline: none;
+      }
+      .remember {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 1rem;
+        color: #555;
+      }
+      button {
+        background: #2d3e50;
+        color: #fff;
+        border: none;
+        border-radius: 6px;
+        padding: 12px;
+        font-size: 1.1rem;
+        cursor: pointer;
+        transition: background 0.2s;
+      }
+      button:hover {
+        background: #ffb347;
+        color: #2d3e50;
+      }
+      .signup-btn {
+        background: #ffb347;
+        color: #2d3e50;
+        border: none;
+        border-radius: 6px;
+        padding: 12px;
+        font-size: 1.1rem;
+        cursor: pointer;
+        transition: background 0.2s;
+        text-decoration: none;
+        display: inline-block;
+      }
+      .signup-btn:hover {
+        background: #2d3e50;
+        color: #fff;
+      }
+      .signup-link {
+        margin-top: 20px;
+        color: #555;
+        font-size: 1rem;
+      }
+      .signup-link a {
+        color: #2d3e50;
+        text-decoration: none;
+        font-weight: 500;
+        transition: color 0.2s;
+      }
+      .signup-link a:hover {
+        color: #ffb347;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="navbar">
-        <a href="/">Home</a>
-        <a href="/aboutus/">About Us</a>
-        <a href="/contactus/">Contact Us</a>
-        <a href="/login/">Login</a>
+      <a href="/">Home</a>
+      <a href="/aboutus/">About Us</a>
+      <a href="/contactus/">Contact Us</a>
+      <a href="/login/">Login</a>
     </div>
     <div class="container">
-        <h1>Login</h1>
-        <form action ="/login/" method = "post" >
-            
-           
-            <input type="email" name="email" placeholder="Email Address" required>
-            <input type="password" name="password" placeholder="Password" required>
-            <div class="remember">
-                <input type="checkbox" id="remember" name="remember">
-                <label for="remember">Remember Me</label>
-            </div>
-            <button type="submit">Login</button>
-            <a href="/signup/" class="signup-btn">Sign Up</a>
-        </form>
-        <div class="signup-link">
-            Don't have an account? <a href="/signup/">Sign up here</a>
+      <h1>Login</h1>
+      {% if error %}
+      <p style="color: red">{{ error }}</p>
+      {% endif %}
+      <form action="login" method="post">
+        {% csrf_token %}
+        <input type="email" name="email" placeholder="Email Address" required />
+        <input
+          type="password"
+          name="password"
+          placeholder="Password"
+          required
+        />
+        <div class="remember">
+          <input type="checkbox" id="remember" name="remember" />
+          <label for="remember">Remember Me</label>
         </div>
+        <button type="submit">Login</button>
+        <a href="/signup/" class="signup-btn">Sign Up</a>
+      </form>
+
+      <div class="signup-link">
+        Don't have an account? <a href="/signup/">Sign up here</a>
+      </div>
     </div>
-</body>
+  </body>
 </html>

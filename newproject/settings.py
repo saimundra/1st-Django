@@ -21,7 +21,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'django-insecure-cmp-3_x=r)jg73&xhw*4r_fl*c6s845@8lz)8lxs%-ilsof)x3'
-
+AUTHENTICATION_BACKENDS  = ["signup.backends.EmailBackend"]
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
@@ -41,7 +41,8 @@ INSTALLED_APPS = [
     'contactus',
     'aboutus',
     'signup',
-    'login'
+    'login',
+    'landingpage'
 ]
 
 MIDDLEWARE = [
@@ -64,6 +65,7 @@ TEMPLATES = [
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.request',
+                'django.template.context_processors.csrf',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
             ],

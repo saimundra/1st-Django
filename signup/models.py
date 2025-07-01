@@ -13,10 +13,7 @@ class signup(models.Model):
         # Hash password before saving only if it's not already hashed
         if not self.password.startswith('pbkdf2_'):  # Avoid re-hashing
             self.password = make_password(self.password)
-        super().save(*args, **kwargs)
-
-    def save(self, *args, **kwargs):
-        # Hash password before saving only if it's not already hashed
-        if not self.confirm_password.startswith('pbkdf2_'):  # Avoid re-hashing
+        if not self.confirm_password.startswith('pbkdf2_'):
             self.confirm_password = make_password(self.confirm_password)
         super().save(*args, **kwargs)
+
